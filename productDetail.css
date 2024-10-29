@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+#product-details-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #00b62d;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+h3 {
+    margin-top: 20px;
+    font-size: 1.5em;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 5px;
+}
+
+p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+strong {
+    color: #098101;
+}
+
+#back-to-cart {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+#back-to-cart:hover {
+    background-color: #28c00d;
+}
+
+/* Reviews section */
+#product-reviews {
+    list-style: none;
+    padding: 0;
+}
+
+.review-item {
+    position: relative;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s;
+}
+
+.review-item:hover {
+    background-color: #e9ecef;
+}
+
+.review-item:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Tooltip styling */
+.tooltip {
+    position: absolute;
+    bottom: 100%; /* Position above the review item */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #33f053;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+    white-space: nowrap;
+    z-index: 10; /* Ensures tooltip appears above other elements */
+}
+
+.tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%; /* Points to the review item */
+    left: 50%;
+    margin-left: -5px; /* Center the arrow */
+    border-width: 5px;
+    border-style: solid;
+    border-color: #28cf70 transparent transparent transparent; /* Arrow color */
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    #product-details-container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+}
+/* Star rating styles */
+.stars {
+    display: inline-block;
+    color: #FFD700; /* Gold color for filled stars */
+}
+
+.star {
+    font-size: 1.2em; /* Adjust size of stars */
+    margin-right: 2px; /* Space between stars */
+}

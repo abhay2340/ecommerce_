@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="main-container">
+        <div id="container">
+            <div id="form-modal-container">
+                <div id="form-container">
+                    <div id="form-inner-container">
+                        <div id="modal-header">
+                            <h1>Post This Item</h1>
+                            <button id="modal-close-button">X</button>
+                        </div>
+                        <form id="form" >
+                            <div>
+                                <label for="product-title">Product Title:</label><br>
+                                <input type="text" id="product-title" placeholder="Product Title"><br>
+                            </div>
+                            <div>
+
+                                <label for="product-price">Product Price:</label><br>
+                                <input type="number" id="product-price" placeholder="Product Price"><br>
+                            </div>
+                            <div>
+
+                                <label for="product-description">Product Description:</label><br>
+                                <input type="text" id="product-description" placeholder="Product Description"><br>
+                            </div>
+                            <div>
+
+                                <label for="product-image">Product Image:</label><br>
+                                <input type="url" id="product-image" placeholder="Image URL"><br>
+                            </div>
+                            <div>
+
+                                <label for="product-category">Product Category:</label><br>
+                                <input type="text" id="product-category" placeholder="Product Category"><br>
+                            </div>
+                            <button id="post-data">Post Data</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <section id="navbar-container">
+            <nav id="navbar">
+                <button id="post-button">Post</button>
+                <!-- <a href="index2.html">Click</a> -->
+                <div>
+                    <div id="cart-logo">
+                        <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThpsQ82Z38IfrKbSO1vgaLNCpe2QoAXD8pSA&s" alt="">
+                        <p id="no-of-cart-items">0</p>
+                    </div>
+                      <input type="text" id="search-input" placeholder="Search for products...">
+                </div>
+            </nav>
+        </section>
+
+        <section id="heroSection">
+
+
+        </section>
+    </div>
+<div id="pagination-container" class="pagination-controls"></div>
+</body>
+<script type="module" src="./main.js"></script>
+<!-- <script type="module" src="API.js"></script> -->
+
+</html>
